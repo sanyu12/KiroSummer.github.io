@@ -1,0 +1,45 @@
+=============================conll05-devel-single-tpf===================
+18834
+model1: recall=82.2608091748961, precision=80.9601486673032
+model2: recall=83.4824036317295, precision=81.9370988637564
+model2 recall - model1 recall = 1.22159445683344
+model2 precision - model1 precision = 0.976950196453231
+Doing random shuffle 10000 times.
+Completed 1000 iterations
+Completed 2000 iterations
+Completed 3000 iterations
+Completed 4000 iterations
+Completed 5000 iterations
+Completed 6000 iterations
+Completed 7000 iterations
+Completed 8000 iterations
+Completed 9000 iterations
+number of random recall diferences equal to or greater than
+	original observed difference: 0
+number of random precision diferences equal to or greater than
+	original observed difference: 1
+p-value for recall diff: 9.99900009999e-05
+p-value for precision diff: 0.0001999800019998
+
+===============================conll05-devel-ensemble=======================
+18837
+model1: recall=83.6479173966127, precision=82.0354870733125
+model2: recall=84.8975712693101, precision=83.5803063120452
+model2 recall - model1 recall = 1.24965387269745
+model2 precision - model1 precision = 1.54481923873267
+Doing random shuffle 10000 times.
+Completed 1000 iterations
+Completed 2000 iterations
+Completed 3000 iterations
+Completed 4000 iterations
+Completed 5000 iterations
+Completed 6000 iterations
+Completed 7000 iterations
+Completed 8000 iterations
+Completed 9000 iterations
+number of random recall diferences equal to or greater than
+	original observed difference: 0
+number of random precision diferences equal to or greater than
+	original observed difference: 0
+p-value for recall diff: 9.99900009999e-05
+p-value for precision diff: 9.99900009999e-05

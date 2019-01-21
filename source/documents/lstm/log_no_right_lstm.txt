@@ -1,0 +1,2352 @@
+wordCutOff = 0
+featCutOff = 0
+charCutOff = 0
+initRange = 0.01
+maxIter = 1000
+batchSize = 1
+adaEps = 1e-06
+adaAlpha = 0.01
+regParameter = 1e-08
+dropProb = 0
+linearHiddenSize = 30
+hiddenSize = 200
+rnnHiddenSize = 300
+wordEmbSize = 50
+wordcontext = 2
+wordEmbFineTune = 1
+charEmbSize = 50
+charcontext = 2
+charEmbFineTune = 1
+charhiddenSize = 50
+verboseIter = 100
+saveItermediate = 1
+train = 0
+maxInstance = -1
+outBest = 
+relu = 0
+seg = 0
+atomLayers = 1
+rnnLayers = 1
+
+instance num: 16091
+
+instance num: 803
+Creating Alphabet...
+100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 1700 1800 1900 2000 2100 2200 2300 2400 2500 2600 2700 2800 2900 3000 3100 3200 3300 3400 3500 3600 3700 3800 3900 4000 
+4100 4200 4300 4400 4500 4600 4700 4800 4900 5000 5100 5200 5300 5400 5500 5600 5700 5800 5900 6000 6100 6200 6300 6400 6500 6600 6700 6800 6900 7000 7100 7200 7300 7400 7500 7600 7700 7800 7900 8000 
+8100 8200 8300 8400 8500 8600 8700 8800 8900 9000 9100 9200 9300 9400 9500 9600 9700 9800 9900 10000 10100 10200 10300 10400 10500 10600 10700 10800 10900 11000 11100 11200 11300 11400 11500 11600 11700 11800 11900 12000 
+12100 12200 12300 12400 12500 12600 12700 12800 12900 13000 13100 13200 13300 13400 13500 13600 13700 13800 13900 14000 14100 14200 14300 14400 14500 14600 14700 14800 14900 15000 15100 15200 15300 15400 15500 15600 15700 15800 15900 16000 
+16091 
+Label num: 32
+Total word num: 34336
+Total char num: 4085
+Total feature num: 905734
+Remain feature num: 905734
+Remain words num: 34338
+Remain char num: 4087
+100 200 300 400 500 600 700 800 900 1000 1100 1200 1300 1400 1500 1600 1700 1800 1900 2000 2100 2200 2300 2400 2500 2600 2700 2800 2900 3000 3100 3200 3300 3400 3500 3600 3700 3800 3900 4000 
+4100 4200 4300 4400 4500 4600 4700 4800 4900 5000 5100 5200 5300 5400 5500 5600 5700 5800 5900 6000 6100 6200 6300 6400 6500 6600 6700 6800 6900 7000 7100 7200 7300 7400 7500 7600 7700 7800 7900 8000 
+8100 8200 8300 8400 8500 8600 8700 8800 8900 9000 9100 9200 9300 9400 9500 9600 9700 9800 9900 10000 10100 10200 10300 10400 10500 10600 10700 10800 10900 11000 11100 11200 11300 11400 11500 11600 11700 11800 11900 12000 
+12100 12200 12300 12400 12500 12600 12700 12800 12900 13000 13100 13200 13300 13400 13500 13600 13700 13800 13900 14000 14100 14200 14300 14400 14500 14600 14700 14800 14900 15000 15100 15200 15300 15400 15500 15600 15700 15800 15900 16000 
+16091 
+100 200 300 400 500 600 700 800 803 
+0 
+##### Iteration 0
+current: 100, total block: 16091
+Cost = 17, Tag Correct(%) = 0.0846803
+current: 200, total block: 16091
+Cost = 5, Tag Correct(%) = 0.123384
+current: 300, total block: 16091
+Cost = 9, Tag Correct(%) = 0.143516
+current: 400, total block: 16091
+Cost = 10, Tag Correct(%) = 0.166711
+current: 500, total block: 16091
+Cost = 8, Tag Correct(%) = 0.186758
+current: 600, total block: 16091
+Cost = 14, Tag Correct(%) = 0.207353
+current: 700, total block: 16091
+Cost = 49, Tag Correct(%) = 0.225252
+current: 800, total block: 16091
+Cost = 12, Tag Correct(%) = 0.24595
+current: 900, total block: 16091
+Cost = 6, Tag Correct(%) = 0.263937
+current: 1000, total block: 16091
+Cost = 17, Tag Correct(%) = 0.287711
+current: 1100, total block: 16091
+Cost = 11, Tag Correct(%) = 0.304195
+current: 1200, total block: 16091
+Cost = 20, Tag Correct(%) = 0.319253
+current: 1300, total block: 16091
+Cost = 0, Tag Correct(%) = 0.335921
+current: 1400, total block: 16091
+Cost = 4, Tag Correct(%) = 0.352267
+current: 1500, total block: 16091
+Cost = 8, Tag Correct(%) = 0.366708
+current: 1600, total block: 16091
+Cost = 8, Tag Correct(%) = 0.38062
+current: 1700, total block: 16091
+Cost = 4, Tag Correct(%) = 0.394524
+current: 1800, total block: 16091
+Cost = 16, Tag Correct(%) = 0.406729
+current: 1900, total block: 16091
+Cost = 2, Tag Correct(%) = 0.418421
+current: 2000, total block: 16091
+Cost = 7, Tag Correct(%) = 0.428359
+current: 2100, total block: 16091
+Cost = 1, Tag Correct(%) = 0.439092
+current: 2200, total block: 16091
+Cost = 6, Tag Correct(%) = 0.448724
+current: 2300, total block: 16091
+Cost = 1, Tag Correct(%) = 0.456847
+current: 2400, total block: 16091
+Cost = 3, Tag Correct(%) = 0.465418
+current: 2500, total block: 16091
+Cost = 2, Tag Correct(%) = 0.4738
+current: 2600, total block: 16091
+Cost = 4, Tag Correct(%) = 0.481393
+current: 2700, total block: 16091
+Cost = 9, Tag Correct(%) = 0.488583
+current: 2800, total block: 16091
+Cost = 9, Tag Correct(%) = 0.494774
+current: 2900, total block: 16091
+Cost = 22, Tag Correct(%) = 0.5009
+current: 3000, total block: 16091
+Cost = 11, Tag Correct(%) = 0.507579
+current: 3100, total block: 16091
+Cost = 9, Tag Correct(%) = 0.513999
+current: 3200, total block: 16091
+Cost = 21, Tag Correct(%) = 0.519731
+current: 3300, total block: 16091
+Cost = 7, Tag Correct(%) = 0.525917
+current: 3400, total block: 16091
+Cost = 9, Tag Correct(%) = 0.531473
+current: 3500, total block: 16091
+Cost = 10, Tag Correct(%) = 0.536315
+current: 3600, total block: 16091
+Cost = 2, Tag Correct(%) = 0.540849
+current: 3700, total block: 16091
+Cost = 8, Tag Correct(%) = 0.545811
+current: 3800, total block: 16091
+Cost = 11, Tag Correct(%) = 0.551094
+current: 3900, total block: 16091
+Cost = 8, Tag Correct(%) = 0.555692
+current: 4000, total block: 16091
+Cost = 0, Tag Correct(%) = 0.559215
+current: 4100, total block: 16091
+Cost = 1, Tag Correct(%) = 0.563318
+current: 4200, total block: 16091
+Cost = 12, Tag Correct(%) = 0.567763
+current: 4300, total block: 16091
+Cost = 1, Tag Correct(%) = 0.572496
+current: 4400, total block: 16091
+Cost = 7, Tag Correct(%) = 0.576259
+current: 4500, total block: 16091
+Cost = 2, Tag Correct(%) = 0.580499
+current: 4600, total block: 16091
+Cost = 1, Tag Correct(%) = 0.583442
+current: 4700, total block: 16091
+Cost = 17, Tag Correct(%) = 0.586939
+current: 4800, total block: 16091
+Cost = 8, Tag Correct(%) = 0.590631
+current: 4900, total block: 16091
+Cost = 10, Tag Correct(%) = 0.594088
+current: 5000, total block: 16091
+Cost = 7, Tag Correct(%) = 0.597269
+current: 5100, total block: 16091
+Cost = 5, Tag Correct(%) = 0.600766
+current: 5200, total block: 16091
+Cost = 7, Tag Correct(%) = 0.603832
+current: 5300, total block: 16091
+Cost = 1, Tag Correct(%) = 0.606313
+current: 5400, total block: 16091
+Cost = 1, Tag Correct(%) = 0.609095
+current: 5500, total block: 16091
+Cost = 17, Tag Correct(%) = 0.61245
+current: 5600, total block: 16091
+Cost = 7, Tag Correct(%) = 0.614955
+current: 5700, total block: 16091
+Cost = 22, Tag Correct(%) = 0.617269
+current: 5800, total block: 16091
+Cost = 7, Tag Correct(%) = 0.619847
+current: 5900, total block: 16091
+Cost = 2, Tag Correct(%) = 0.62259
+current: 6000, total block: 16091
+Cost = 23, Tag Correct(%) = 0.625366
+current: 6100, total block: 16091
+Cost = 19, Tag Correct(%) = 0.627976
+current: 6200, total block: 16091
+Cost = 5, Tag Correct(%) = 0.630523
+current: 6300, total block: 16091
+Cost = 6, Tag Correct(%) = 0.632763
+current: 6400, total block: 16091
+Cost = 6, Tag Correct(%) = 0.634934
+current: 6500, total block: 16091
+Cost = 6, Tag Correct(%) = 0.637092
+current: 6600, total block: 16091
+Cost = 4, Tag Correct(%) = 0.639128
+current: 6700, total block: 16091
+Cost = 7, Tag Correct(%) = 0.641285
+current: 6800, total block: 16091
+Cost = 19, Tag Correct(%) = 0.643341
+current: 6900, total block: 16091
+Cost = 10, Tag Correct(%) = 0.64494
+current: 7000, total block: 16091
+Cost = 1, Tag Correct(%) = 0.646717
+current: 7100, total block: 16091
+Cost = 2, Tag Correct(%) = 0.648347
+current: 7200, total block: 16091
+Cost = 7, Tag Correct(%) = 0.650229
+current: 7300, total block: 16091
+Cost = 4, Tag Correct(%) = 0.65218
+current: 7400, total block: 16091
+Cost = 2, Tag Correct(%) = 0.653775
+current: 7500, total block: 16091
+Cost = 2, Tag Correct(%) = 0.655338
+current: 7600, total block: 16091
+Cost = 7, Tag Correct(%) = 0.656841
+current: 7700, total block: 16091
+Cost = 0, Tag Correct(%) = 0.658377
+current: 7800, total block: 16091
+Cost = 10, Tag Correct(%) = 0.660094
+current: 7900, total block: 16091
+Cost = 6, Tag Correct(%) = 0.661568
+current: 8000, total block: 16091
+Cost = 7, Tag Correct(%) = 0.663035
+current: 8100, total block: 16091
+Cost = 0, Tag Correct(%) = 0.664635
+current: 8200, total block: 16091
+Cost = 37, Tag Correct(%) = 0.666001
+current: 8300, total block: 16091
+Cost = 5, Tag Correct(%) = 0.6675
+current: 8400, total block: 16091
+Cost = 10, Tag Correct(%) = 0.669117
+current: 8500, total block: 16091
+Cost = 2, Tag Correct(%) = 0.670619
+current: 8600, total block: 16091
+Cost = 11, Tag Correct(%) = 0.671987
+current: 8700, total block: 16091
+Cost = 11, Tag Correct(%) = 0.67337
+current: 8800, total block: 16091
+Cost = 0, Tag Correct(%) = 0.674922
+current: 8900, total block: 16091
+Cost = 5, Tag Correct(%) = 0.67606
+current: 9000, total block: 16091
+Cost = 5, Tag Correct(%) = 0.677509
+current: 9100, total block: 16091
+Cost = 1, Tag Correct(%) = 0.678911
+current: 9200, total block: 16091
+Cost = 13, Tag Correct(%) = 0.680163
+current: 9300, total block: 16091
+Cost = 6, Tag Correct(%) = 0.681362
+current: 9400, total block: 16091
+Cost = 3, Tag Correct(%) = 0.682739
+current: 9500, total block: 16091
+Cost = 0, Tag Correct(%) = 0.684185
+current: 9600, total block: 16091
+Cost = 0, Tag Correct(%) = 0.685577
+current: 9700, total block: 16091
+Cost = 3, Tag Correct(%) = 0.68679
+current: 9800, total block: 16091
+Cost = 12, Tag Correct(%) = 0.687928
+current: 9900, total block: 16091
+Cost = 3, Tag Correct(%) = 0.689273
+current: 10000, total block: 16091
+Cost = 4, Tag Correct(%) = 0.690516
+current: 10100, total block: 16091
+Cost = 3, Tag Correct(%) = 0.691832
+current: 10200, total block: 16091
+Cost = 13, Tag Correct(%) = 0.692915
+current: 10300, total block: 16091
+Cost = 7, Tag Correct(%) = 0.694046
+current: 10400, total block: 16091
+Cost = 5, Tag Correct(%) = 0.695334
+current: 10500, total block: 16091
+Cost = 2, Tag Correct(%) = 0.696557
+current: 10600, total block: 16091
+Cost = 5, Tag Correct(%) = 0.697519
+current: 10700, total block: 16091
+Cost = 0, Tag Correct(%) = 0.698552
+current: 10800, total block: 16091
+Cost = 5, Tag Correct(%) = 0.699651
+current: 10900, total block: 16091
+Cost = 4, Tag Correct(%) = 0.700588
+current: 11000, total block: 16091
+Cost = 6, Tag Correct(%) = 0.701504
+current: 11100, total block: 16091
+Cost = 0, Tag Correct(%) = 0.702305
+current: 11200, total block: 16091
+Cost = 17, Tag Correct(%) = 0.703269
+current: 11300, total block: 16091
+Cost = 0, Tag Correct(%) = 0.704345
+current: 11400, total block: 16091
+Cost = 6, Tag Correct(%) = 0.705281
+current: 11500, total block: 16091
+Cost = 6, Tag Correct(%) = 0.706255
+current: 11600, total block: 16091
+Cost = 3, Tag Correct(%) = 0.707229
+current: 11700, total block: 16091
+Cost = 9, Tag Correct(%) = 0.708255
+current: 11800, total block: 16091
+Cost = 1, Tag Correct(%) = 0.709108
+current: 11900, total block: 16091
+Cost = 0, Tag Correct(%) = 0.709927
+current: 12000, total block: 16091
+Cost = 7, Tag Correct(%) = 0.710807
+current: 12100, total block: 16091
+Cost = 3, Tag Correct(%) = 0.711691
+current: 12200, total block: 16091
+Cost = 10, Tag Correct(%) = 0.712481
+current: 12300, total block: 16091
+Cost = 4, Tag Correct(%) = 0.713315
+current: 12400, total block: 16091
+Cost = 2, Tag Correct(%) = 0.714052
+current: 12500, total block: 16091
+Cost = 7, Tag Correct(%) = 0.715016
+current: 12600, total block: 16091
+Cost = 6, Tag Correct(%) = 0.715748
+current: 12700, total block: 16091
+Cost = 2, Tag Correct(%) = 0.716521
+current: 12800, total block: 16091
+Cost = 1, Tag Correct(%) = 0.717332
+current: 12900, total block: 16091
+Cost = 0, Tag Correct(%) = 0.717962
+current: 13000, total block: 16091
+Cost = 1, Tag Correct(%) = 0.718659
+current: 13100, total block: 16091
+Cost = 9, Tag Correct(%) = 0.719457
+current: 13200, total block: 16091
+Cost = 3, Tag Correct(%) = 0.720247
+current: 13300, total block: 16091
+Cost = 17, Tag Correct(%) = 0.720918
+current: 13400, total block: 16091
+Cost = 3, Tag Correct(%) = 0.721627
+current: 13500, total block: 16091
+Cost = 14, Tag Correct(%) = 0.72252
+current: 13600, total block: 16091
+Cost = 6, Tag Correct(%) = 0.723232
+current: 13700, total block: 16091
+Cost = 1, Tag Correct(%) = 0.72392
+current: 13800, total block: 16091
+Cost = 9, Tag Correct(%) = 0.72445
+current: 13900, total block: 16091
+Cost = 2, Tag Correct(%) = 0.72512
+current: 14000, total block: 16091
+Cost = 7, Tag Correct(%) = 0.725814
+current: 14100, total block: 16091
+Cost = 4, Tag Correct(%) = 0.726593
+current: 14200, total block: 16091
+Cost = 4, Tag Correct(%) = 0.727291
+current: 14300, total block: 16091
+Cost = 1, Tag Correct(%) = 0.728017
+current: 14400, total block: 16091
+Cost = 3, Tag Correct(%) = 0.728625
+current: 14500, total block: 16091
+Cost = 0, Tag Correct(%) = 0.729062
+current: 14600, total block: 16091
+Cost = 9, Tag Correct(%) = 0.729662
+current: 14700, total block: 16091
+Cost = 0, Tag Correct(%) = 0.730072
+current: 14800, total block: 16091
+Cost = 2, Tag Correct(%) = 0.730759
+current: 14900, total block: 16091
+Cost = 0, Tag Correct(%) = 0.731436
+current: 15000, total block: 16091
+Cost = 2, Tag Correct(%) = 0.731952
+current: 15100, total block: 16091
+Cost = 7, Tag Correct(%) = 0.732508
+current: 15200, total block: 16091
+Cost = 3, Tag Correct(%) = 0.733117
+current: 15300, total block: 16091
+Cost = 0, Tag Correct(%) = 0.733585
+current: 15400, total block: 16091
+Cost = 2, Tag Correct(%) = 0.734226
+current: 15500, total block: 16091
+Cost = 7, Tag Correct(%) = 0.73495
+current: 15600, total block: 16091
+Cost = 9, Tag Correct(%) = 0.735524
+current: 15700, total block: 16091
+Cost = 0, Tag Correct(%) = 0.736187
+current: 15800, total block: 16091
+Cost = 3, Tag Correct(%) = 0.736644
+current: 15900, total block: 16091
+Cost = 9, Tag Correct(%) = 0.737377
+current: 16000, total block: 16091
+Cost = 1, Tag Correct(%) = 0.737905
+Accuracy:	P=18980/20454=0.927936
+Exceeds best previous performance of 0. Saving model file..
+##### Iteration 1
+current: 9, total block: 16091
+Cost = 2, Tag Correct(%) = 0.913043
+current: 109, total block: 16091
+Cost = 4, Tag Correct(%) = 0.869795
+current: 209, total block: 16091
+Cost = 1, Tag Correct(%) = 0.869112
+current: 309, total block: 16091
+Cost = 11, Tag Correct(%) = 0.862137
+current: 409, total block: 16091
+Cost = 2, Tag Correct(%) = 0.86332
+current: 509, total block: 16091
+Cost = 8, Tag Correct(%) = 0.862761
+current: 609, total block: 16091
+Cost = 1, Tag Correct(%) = 0.861808
+current: 709, total block: 16091
+Cost = 4, Tag Correct(%) = 0.862058
+current: 809, total block: 16091
+Cost = 3, Tag Correct(%) = 0.861603
+current: 909, total block: 16091
+Cost = 6, Tag Correct(%) = 0.860992
+current: 1009, total block: 16091
+Cost = 8, Tag Correct(%) = 0.859543
+current: 1109, total block: 16091
+Cost = 2, Tag Correct(%) = 0.860121
+current: 1209, total block: 16091
+Cost = 1, Tag Correct(%) = 0.861464
+current: 1309, total block: 16091
+Cost = 4, Tag Correct(%) = 0.8615
+current: 1409, total block: 16091
+Cost = 6, Tag Correct(%) = 0.861229
+current: 1509, total block: 16091
+Cost = 0, Tag Correct(%) = 0.860692
+current: 1609, total block: 16091
+Cost = 6, Tag Correct(%) = 0.860692
+current: 1709, total block: 16091
+Cost = 0, Tag Correct(%) = 0.860808
+current: 1809, total block: 16091
+Cost = 4, Tag Correct(%) = 0.861204
+current: 1909, total block: 16091
+Cost = 3, Tag Correct(%) = 0.861233
+current: 2009, total block: 16091
+Cost = 6, Tag Correct(%) = 0.861545
+current: 2109, total block: 16091
+Cost = 1, Tag Correct(%) = 0.861719
+current: 2209, total block: 16091
+Cost = 5, Tag Correct(%) = 0.861596
+current: 2309, total block: 16091
+Cost = 15, Tag Correct(%) = 0.861067
+current: 2409, total block: 16091
+Cost = 6, Tag Correct(%) = 0.861178
+current: 2509, total block: 16091
+Cost = 6, Tag Correct(%) = 0.860974
+current: 2609, total block: 16091
+Cost = 1, Tag Correct(%) = 0.86124
+current: 2709, total block: 16091
+Cost = 12, Tag Correct(%) = 0.861708
+current: 2809, total block: 16091
+Cost = 2, Tag Correct(%) = 0.861747
+current: 2909, total block: 16091
+Cost = 8, Tag Correct(%) = 0.861255
+current: 3009, total block: 16091
+Cost = 3, Tag Correct(%) = 0.861474
+current: 3109, total block: 16091
+Cost = 5, Tag Correct(%) = 0.861484
+current: 3209, total block: 16091
+Cost = 6, Tag Correct(%) = 0.861406
+current: 3309, total block: 16091
+Cost = 7, Tag Correct(%) = 0.861463
+current: 3409, total block: 16091
+Cost = 5, Tag Correct(%) = 0.861262
+current: 3509, total block: 16091
+Cost = 2, Tag Correct(%) = 0.861012
+current: 3609, total block: 16091
+Cost = 1, Tag Correct(%) = 0.860908
+current: 3709, total block: 16091
+Cost = 0, Tag Correct(%) = 0.860985
+current: 3809, total block: 16091
+Cost = 5, Tag Correct(%) = 0.861023
+current: 3909, total block: 16091
+Cost = 0, Tag Correct(%) = 0.861647
+current: 4009, total block: 16091
+Cost = 5, Tag Correct(%) = 0.861547
+current: 4109, total block: 16091
+Cost = 1, Tag Correct(%) = 0.862119
+current: 4209, total block: 16091
+Cost = 2, Tag Correct(%) = 0.862206
+current: 4309, total block: 16091
+Cost = 4, Tag Correct(%) = 0.862544
+current: 4409, total block: 16091
+Cost = 4, Tag Correct(%) = 0.862459
+current: 4509, total block: 16091
+Cost = 7, Tag Correct(%) = 0.862586
+current: 4609, total block: 16091
+Cost = 1, Tag Correct(%) = 0.862474
+current: 4709, total block: 16091
+Cost = 2, Tag Correct(%) = 0.862606
+current: 4809, total block: 16091
+Cost = 5, Tag Correct(%) = 0.862374
+current: 4909, total block: 16091
+Cost = 0, Tag Correct(%) = 0.862507
+current: 5009, total block: 16091
+Cost = 0, Tag Correct(%) = 0.862327
+current: 5109, total block: 16091
+Cost = 1, Tag Correct(%) = 0.862274
+current: 5209, total block: 16091
+Cost = 0, Tag Correct(%) = 0.862492
+current: 5309, total block: 16091
+Cost = 7, Tag Correct(%) = 0.862616
+current: 5409, total block: 16091
+Cost = 2, Tag Correct(%) = 0.862844
+current: 5509, total block: 16091
+Cost = 5, Tag Correct(%) = 0.862954
+current: 5609, total block: 16091
+Cost = 2, Tag Correct(%) = 0.863129
+current: 5709, total block: 16091
+Cost = 2, Tag Correct(%) = 0.863101
+current: 5809, total block: 16091
+Cost = 0, Tag Correct(%) = 0.863044
+current: 5909, total block: 16091
+Cost = 1, Tag Correct(%) = 0.863037
+current: 6009, total block: 16091
+Cost = 0, Tag Correct(%) = 0.863245
+current: 6109, total block: 16091
+Cost = 1, Tag Correct(%) = 0.863397
+current: 6209, total block: 16091
+Cost = 9, Tag Correct(%) = 0.863492
+current: 6309, total block: 16091
+Cost = 4, Tag Correct(%) = 0.863493
+current: 6409, total block: 16091
+Cost = 6, Tag Correct(%) = 0.863642
+current: 6509, total block: 16091
+Cost = 0, Tag Correct(%) = 0.863835
+current: 6609, total block: 16091
+Cost = 0, Tag Correct(%) = 0.863945
+current: 6709, total block: 16091
+Cost = 1, Tag Correct(%) = 0.863948
+current: 6809, total block: 16091
+Cost = 2, Tag Correct(%) = 0.86397
+current: 6909, total block: 16091
+Cost = 2, Tag Correct(%) = 0.864222
+current: 7009, total block: 16091
+Cost = 15, Tag Correct(%) = 0.864371
+current: 7109, total block: 16091
+Cost = 3, Tag Correct(%) = 0.86452
+current: 7209, total block: 16091
+Cost = 3, Tag Correct(%) = 0.864378
+current: 7309, total block: 16091
+Cost = 0, Tag Correct(%) = 0.864485
+current: 7409, total block: 16091
+Cost = 7, Tag Correct(%) = 0.864609
+current: 7509, total block: 16091
+Cost = 4, Tag Correct(%) = 0.865046
+current: 7609, total block: 16091
+Cost = 0, Tag Correct(%) = 0.86515
+current: 7709, total block: 16091
+Cost = 10, Tag Correct(%) = 0.865323
+current: 7809, total block: 16091
+Cost = 3, Tag Correct(%) = 0.865593
+current: 7909, total block: 16091
+Cost = 4, Tag Correct(%) = 0.865721
+current: 8009, total block: 16091
+Cost = 0, Tag Correct(%) = 0.865494
+current: 8109, total block: 16091
+Cost = 0, Tag Correct(%) = 0.865383
+current: 8209, total block: 16091
+Cost = 3, Tag Correct(%) = 0.865467
+current: 8309, total block: 16091
+Cost = 4, Tag Correct(%) = 0.865554
+current: 8409, total block: 16091
+Cost = 2, Tag Correct(%) = 0.865602
+current: 8509, total block: 16091
+Cost = 11, Tag Correct(%) = 0.865821
+current: 8609, total block: 16091
+Cost = 16, Tag Correct(%) = 0.86595
+current: 8709, total block: 16091
+Cost = 8, Tag Correct(%) = 0.865969
+current: 8809, total block: 16091
+Cost = 1, Tag Correct(%) = 0.865986
+current: 8909, total block: 16091
+Cost = 8, Tag Correct(%) = 0.866061
+current: 9009, total block: 16091
+Cost = 0, Tag Correct(%) = 0.865916
+current: 9109, total block: 16091
+Cost = 4, Tag Correct(%) = 0.866113
+current: 9209, total block: 16091
+Cost = 1, Tag Correct(%) = 0.866099
+current: 9309, total block: 16091
+Cost = 1, Tag Correct(%) = 0.86616
+current: 9409, total block: 16091
+Cost = 2, Tag Correct(%) = 0.866235
+current: 9509, total block: 16091
+Cost = 4, Tag Correct(%) = 0.866254
+current: 9609, total block: 16091
+Cost = 10, Tag Correct(%) = 0.866396
+current: 9709, total block: 16091
+Cost = 2, Tag Correct(%) = 0.866548
+current: 9809, total block: 16091
+Cost = 2, Tag Correct(%) = 0.866741
+current: 9909, total block: 16091
+Cost = 4, Tag Correct(%) = 0.866713
+current: 10009, total block: 16091
+Cost = 5, Tag Correct(%) = 0.866813
+current: 10109, total block: 16091
+Cost = 2, Tag Correct(%) = 0.866781
+current: 10209, total block: 16091
+Cost = 6, Tag Correct(%) = 0.866918
+current: 10309, total block: 16091
+Cost = 2, Tag Correct(%) = 0.867051
+current: 10409, total block: 16091
+Cost = 4, Tag Correct(%) = 0.867103
+current: 10509, total block: 16091
+Cost = 10, Tag Correct(%) = 0.867103
+current: 10609, total block: 16091
+Cost = 13, Tag Correct(%) = 0.867135
+current: 10709, total block: 16091
+Cost = 1, Tag Correct(%) = 0.867351
+current: 10809, total block: 16091
+Cost = 3, Tag Correct(%) = 0.867462
+current: 10909, total block: 16091
+Cost = 3, Tag Correct(%) = 0.867494
+current: 11009, total block: 16091
+Cost = 3, Tag Correct(%) = 0.867596
+current: 11109, total block: 16091
+Cost = 13, Tag Correct(%) = 0.867541
+current: 11209, total block: 16091
+Cost = 1, Tag Correct(%) = 0.867642
+current: 11309, total block: 16091
+Cost = 5, Tag Correct(%) = 0.86768
+current: 11409, total block: 16091
+Cost = 0, Tag Correct(%) = 0.867738
+current: 11509, total block: 16091
+Cost = 8, Tag Correct(%) = 0.867822
+current: 11609, total block: 16091
+Cost = 1, Tag Correct(%) = 0.867873
+current: 11709, total block: 16091
+Cost = 6, Tag Correct(%) = 0.867957
+current: 11809, total block: 16091
+Cost = 0, Tag Correct(%) = 0.868032
+current: 11909, total block: 16091
+Cost = 9, Tag Correct(%) = 0.868136
+current: 12009, total block: 16091
+Cost = 2, Tag Correct(%) = 0.868142
+current: 12109, total block: 16091
+Cost = 4, Tag Correct(%) = 0.868095
+current: 12209, total block: 16091
+Cost = 0, Tag Correct(%) = 0.868169
+current: 12309, total block: 16091
+Cost = 6, Tag Correct(%) = 0.868287
+current: 12409, total block: 16091
+Cost = 4, Tag Correct(%) = 0.868424
+current: 12509, total block: 16091
+Cost = 1, Tag Correct(%) = 0.868474
+current: 12609, total block: 16091
+Cost = 2, Tag Correct(%) = 0.868517
+current: 12709, total block: 16091
+Cost = 0, Tag Correct(%) = 0.868534
+current: 12809, total block: 16091
+Cost = 3, Tag Correct(%) = 0.868722
+current: 12909, total block: 16091
+Cost = 3, Tag Correct(%) = 0.868763
+current: 13009, total block: 16091
+Cost = 2, Tag Correct(%) = 0.868902
+current: 13109, total block: 16091
+Cost = 1, Tag Correct(%) = 0.868983
+current: 13209, total block: 16091
+Cost = 0, Tag Correct(%) = 0.869158
+current: 13309, total block: 16091
+Cost = 0, Tag Correct(%) = 0.86919
+current: 13409, total block: 16091
+Cost = 8, Tag Correct(%) = 0.869337
+current: 13509, total block: 16091
+Cost = 5, Tag Correct(%) = 0.869426
+current: 13609, total block: 16091
+Cost = 2, Tag Correct(%) = 0.869493
+current: 13709, total block: 16091
+Cost = 7, Tag Correct(%) = 0.869474
+current: 13809, total block: 16091
+Cost = 1, Tag Correct(%) = 0.869586
+current: 13909, total block: 16091
+Cost = 2, Tag Correct(%) = 0.869663
+current: 14009, total block: 16091
+Cost = 6, Tag Correct(%) = 0.869748
+current: 14109, total block: 16091
+Cost = 2, Tag Correct(%) = 0.8698
+current: 14209, total block: 16091
+Cost = 2, Tag Correct(%) = 0.869851
+current: 14309, total block: 16091
+Cost = 2, Tag Correct(%) = 0.869993
+current: 14409, total block: 16091
+Cost = 2, Tag Correct(%) = 0.869996
+current: 14509, total block: 16091
+Cost = 0, Tag Correct(%) = 0.869981
+current: 14609, total block: 16091
+Cost = 0, Tag Correct(%) = 0.87004
+current: 14709, total block: 16091
+Cost = 3, Tag Correct(%) = 0.870109
+current: 14809, total block: 16091
+Cost = 3, Tag Correct(%) = 0.870147
+current: 14909, total block: 16091
+Cost = 4, Tag Correct(%) = 0.870202
+current: 15009, total block: 16091
+Cost = 5, Tag Correct(%) = 0.870288
+current: 15109, total block: 16091
+Cost = 0, Tag Correct(%) = 0.870382
+current: 15209, total block: 16091
+Cost = 0, Tag Correct(%) = 0.87045
+current: 15309, total block: 16091
+Cost = 6, Tag Correct(%) = 0.870432
+current: 15409, total block: 16091
+Cost = 1, Tag Correct(%) = 0.870427
+current: 15509, total block: 16091
+Cost = 4, Tag Correct(%) = 0.870493
+current: 15609, total block: 16091
+Cost = 5, Tag Correct(%) = 0.870592
+current: 15709, total block: 16091
+Cost = 3, Tag Correct(%) = 0.870646
+current: 15809, total block: 16091
+Cost = 0, Tag Correct(%) = 0.870683
+current: 15909, total block: 16091
+Cost = 3, Tag Correct(%) = 0.870759
+current: 16009, total block: 16091
+Cost = 6, Tag Correct(%) = 0.870798
+Accuracy:	P=19162/20454=0.936834
+Exceeds best previous performance of 0.927936. Saving model file..
+##### Iteration 2
+current: 18, total block: 16091
+Cost = 3, Tag Correct(%) = 0.90161
+current: 118, total block: 16091
+Cost = 3, Tag Correct(%) = 0.910126
+current: 218, total block: 16091
+Cost = 1, Tag Correct(%) = 0.906604
+current: 318, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901791
+current: 418, total block: 16091
+Cost = 3, Tag Correct(%) = 0.902482
+current: 518, total block: 16091
+Cost = 6, Tag Correct(%) = 0.902912
+current: 618, total block: 16091
+Cost = 1, Tag Correct(%) = 0.90246
+current: 718, total block: 16091
+Cost = 2, Tag Correct(%) = 0.901039
+current: 818, total block: 16091
+Cost = 2, Tag Correct(%) = 0.900916
+current: 918, total block: 16091
+Cost = 5, Tag Correct(%) = 0.902
+current: 1018, total block: 16091
+Cost = 7, Tag Correct(%) = 0.901692
+current: 1118, total block: 16091
+Cost = 2, Tag Correct(%) = 0.902512
+current: 1218, total block: 16091
+Cost = 1, Tag Correct(%) = 0.902289
+current: 1318, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901915
+current: 1418, total block: 16091
+Cost = 4, Tag Correct(%) = 0.901586
+current: 1518, total block: 16091
+Cost = 1, Tag Correct(%) = 0.902
+current: 1618, total block: 16091
+Cost = 2, Tag Correct(%) = 0.902107
+current: 1718, total block: 16091
+Cost = 1, Tag Correct(%) = 0.902502
+current: 1818, total block: 16091
+Cost = 1, Tag Correct(%) = 0.902798
+current: 1918, total block: 16091
+Cost = 6, Tag Correct(%) = 0.902157
+current: 2018, total block: 16091
+Cost = 1, Tag Correct(%) = 0.902098
+current: 2118, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901737
+current: 2218, total block: 16091
+Cost = 5, Tag Correct(%) = 0.90131
+current: 2318, total block: 16091
+Cost = 4, Tag Correct(%) = 0.901375
+current: 2418, total block: 16091
+Cost = 2, Tag Correct(%) = 0.901364
+current: 2518, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901179
+current: 2618, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901227
+current: 2718, total block: 16091
+Cost = 4, Tag Correct(%) = 0.901424
+current: 2818, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901561
+current: 2918, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901744
+current: 3018, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901623
+current: 3118, total block: 16091
+Cost = 5, Tag Correct(%) = 0.90148
+current: 3218, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901358
+current: 3318, total block: 16091
+Cost = 10, Tag Correct(%) = 0.901018
+current: 3418, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901425
+current: 3518, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901489
+current: 3618, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901572
+current: 3718, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901758
+current: 3818, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901714
+current: 3918, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901668
+current: 4018, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901702
+current: 4118, total block: 16091
+Cost = 4, Tag Correct(%) = 0.901845
+current: 4218, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901838
+current: 4318, total block: 16091
+Cost = 0, Tag Correct(%) = 0.902174
+current: 4418, total block: 16091
+Cost = 4, Tag Correct(%) = 0.901959
+current: 4518, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901997
+current: 4618, total block: 16091
+Cost = 0, Tag Correct(%) = 0.90173
+current: 4718, total block: 16091
+Cost = 5, Tag Correct(%) = 0.901549
+current: 4818, total block: 16091
+Cost = 1, Tag Correct(%) = 0.901775
+current: 4918, total block: 16091
+Cost = 2, Tag Correct(%) = 0.901776
+current: 5018, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901852
+current: 5118, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901754
+current: 5218, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901686
+current: 5318, total block: 16091
+Cost = 5, Tag Correct(%) = 0.901951
+current: 5418, total block: 16091
+Cost = 2, Tag Correct(%) = 0.901702
+current: 5518, total block: 16091
+Cost = 0, Tag Correct(%) = 0.901592
+current: 5618, total block: 16091
+Cost = 2, Tag Correct(%) = 0.901965
+current: 5718, total block: 16091
+Cost = 5, Tag Correct(%) = 0.901813
+current: 5818, total block: 16091
+Cost = 3, Tag Correct(%) = 0.901895
+current: 5918, total block: 16091
+Cost = 4, Tag Correct(%) = 0.901898
+current: 6018, total block: 16091
+Cost = 4, Tag Correct(%) = 0.902143
+current: 6118, total block: 16091
+Cost = 2, Tag Correct(%) = 0.902242
+current: 6218, total block: 16091
+Cost = 0, Tag Correct(%) = 0.902357
+current: 6318, total block: 16091
+Cost = 1, Tag Correct(%) = 0.902524
+current: 6418, total block: 16091
+Cost = 8, Tag Correct(%) = 0.902809
+current: 6518, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903117
+current: 6618, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903275
+current: 6718, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903224
+current: 6818, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903279
+current: 6918, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903167
+current: 7018, total block: 16091
+Cost = 4, Tag Correct(%) = 0.90334
+current: 7118, total block: 16091
+Cost = 5, Tag Correct(%) = 0.903367
+current: 7218, total block: 16091
+Cost = 13, Tag Correct(%) = 0.903473
+current: 7318, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903394
+current: 7418, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903406
+current: 7518, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903429
+current: 7618, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903519
+current: 7718, total block: 16091
+Cost = 1, Tag Correct(%) = 0.90368
+current: 7818, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903536
+current: 7918, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903421
+current: 8018, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903517
+current: 8118, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903567
+current: 8218, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903585
+current: 8318, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903668
+current: 8418, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903642
+current: 8518, total block: 16091
+Cost = 6, Tag Correct(%) = 0.903689
+current: 8618, total block: 16091
+Cost = 12, Tag Correct(%) = 0.903697
+current: 8718, total block: 16091
+Cost = 11, Tag Correct(%) = 0.903632
+current: 8818, total block: 16091
+Cost = 4, Tag Correct(%) = 0.903668
+current: 8918, total block: 16091
+Cost = 8, Tag Correct(%) = 0.903582
+current: 9018, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903508
+current: 9118, total block: 16091
+Cost = 10, Tag Correct(%) = 0.903497
+current: 9218, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903473
+current: 9318, total block: 16091
+Cost = 8, Tag Correct(%) = 0.903411
+current: 9418, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903434
+current: 9518, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903564
+current: 9618, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903431
+current: 9718, total block: 16091
+Cost = 5, Tag Correct(%) = 0.903359
+current: 9818, total block: 16091
+Cost = 11, Tag Correct(%) = 0.90343
+current: 9918, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903356
+current: 10018, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903307
+current: 10118, total block: 16091
+Cost = 1, Tag Correct(%) = 0.90334
+current: 10218, total block: 16091
+Cost = 0, Tag Correct(%) = 0.90333
+current: 10318, total block: 16091
+Cost = 5, Tag Correct(%) = 0.903317
+current: 10418, total block: 16091
+Cost = 6, Tag Correct(%) = 0.903265
+current: 10518, total block: 16091
+Cost = 4, Tag Correct(%) = 0.903244
+current: 10618, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903278
+current: 10718, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903344
+current: 10818, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903368
+current: 10918, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903337
+current: 11018, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903423
+current: 11118, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903389
+current: 11218, total block: 16091
+Cost = 2, Tag Correct(%) = 0.90345
+current: 11318, total block: 16091
+Cost = 6, Tag Correct(%) = 0.903321
+current: 11418, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903405
+current: 11518, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903363
+current: 11618, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903407
+current: 11718, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903431
+current: 11818, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903487
+current: 11918, total block: 16091
+Cost = 5, Tag Correct(%) = 0.90346
+current: 12018, total block: 16091
+Cost = 3, Tag Correct(%) = 0.90354
+current: 12118, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903605
+current: 12218, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903678
+current: 12318, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903651
+current: 12418, total block: 16091
+Cost = 5, Tag Correct(%) = 0.903631
+current: 12518, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903608
+current: 12618, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903587
+current: 12718, total block: 16091
+Cost = 3, Tag Correct(%) = 0.90362
+current: 12818, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903653
+current: 12918, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903655
+current: 13018, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903597
+current: 13118, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903506
+current: 13218, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903521
+current: 13318, total block: 16091
+Cost = 4, Tag Correct(%) = 0.903505
+current: 13418, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903542
+current: 13518, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903563
+current: 13618, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903491
+current: 13718, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903387
+current: 13818, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903412
+current: 13918, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903398
+current: 14018, total block: 16091
+Cost = 25, Tag Correct(%) = 0.903306
+current: 14118, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903382
+current: 14218, total block: 16091
+Cost = 7, Tag Correct(%) = 0.903423
+current: 14318, total block: 16091
+Cost = 4, Tag Correct(%) = 0.903329
+current: 14418, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903314
+current: 14518, total block: 16091
+Cost = 5, Tag Correct(%) = 0.903348
+current: 14618, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903231
+current: 14718, total block: 16091
+Cost = 5, Tag Correct(%) = 0.903235
+current: 14818, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903255
+current: 14918, total block: 16091
+Cost = 8, Tag Correct(%) = 0.903266
+current: 15018, total block: 16091
+Cost = 7, Tag Correct(%) = 0.903253
+current: 15118, total block: 16091
+Cost = 4, Tag Correct(%) = 0.903291
+current: 15218, total block: 16091
+Cost = 3, Tag Correct(%) = 0.903311
+current: 15318, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903319
+current: 15418, total block: 16091
+Cost = 7, Tag Correct(%) = 0.903251
+current: 15518, total block: 16091
+Cost = 1, Tag Correct(%) = 0.903305
+current: 15618, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903238
+current: 15718, total block: 16091
+Cost = 4, Tag Correct(%) = 0.903214
+current: 15818, total block: 16091
+Cost = 12, Tag Correct(%) = 0.903247
+current: 15918, total block: 16091
+Cost = 0, Tag Correct(%) = 0.903269
+current: 16018, total block: 16091
+Cost = 2, Tag Correct(%) = 0.903226
+Accuracy:	P=19231/20454=0.940207
+Exceeds best previous performance of 0.936834. Saving model file..
+##### Iteration 3
+current: 27, total block: 16091
+Cost = 0, Tag Correct(%) = 0.936575
+current: 127, total block: 16091
+Cost = 5, Tag Correct(%) = 0.920721
+current: 227, total block: 16091
+Cost = 0, Tag Correct(%) = 0.923557
+current: 327, total block: 16091
+Cost = 0, Tag Correct(%) = 0.926777
+current: 427, total block: 16091
+Cost = 4, Tag Correct(%) = 0.925443
+current: 527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.926448
+current: 627, total block: 16091
+Cost = 0, Tag Correct(%) = 0.924602
+current: 727, total block: 16091
+Cost = 3, Tag Correct(%) = 0.926195
+current: 827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.925031
+current: 927, total block: 16091
+Cost = 1, Tag Correct(%) = 0.923887
+current: 1027, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92392
+current: 1127, total block: 16091
+Cost = 0, Tag Correct(%) = 0.925026
+current: 1227, total block: 16091
+Cost = 2, Tag Correct(%) = 0.924995
+current: 1327, total block: 16091
+Cost = 1, Tag Correct(%) = 0.924822
+current: 1427, total block: 16091
+Cost = 0, Tag Correct(%) = 0.924641
+current: 1527, total block: 16091
+Cost = 4, Tag Correct(%) = 0.924449
+current: 1627, total block: 16091
+Cost = 4, Tag Correct(%) = 0.924475
+current: 1727, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92469
+current: 1827, total block: 16091
+Cost = 5, Tag Correct(%) = 0.924631
+current: 1927, total block: 16091
+Cost = 4, Tag Correct(%) = 0.923266
+current: 2027, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922898
+current: 2127, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922907
+current: 2227, total block: 16091
+Cost = 8, Tag Correct(%) = 0.922898
+current: 2327, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922904
+current: 2427, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922572
+current: 2527, total block: 16091
+Cost = 1, Tag Correct(%) = 0.92259
+current: 2627, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922373
+current: 2727, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921964
+current: 2827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92201
+current: 2927, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922212
+current: 3027, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922258
+current: 3127, total block: 16091
+Cost = 9, Tag Correct(%) = 0.922405
+current: 3227, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922692
+current: 3327, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922776
+current: 3427, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922819
+current: 3527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92255
+current: 3627, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922717
+current: 3727, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922652
+current: 3827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922887
+current: 3927, total block: 16091
+Cost = 6, Tag Correct(%) = 0.922705
+current: 4027, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922765
+current: 4127, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922531
+current: 4227, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922324
+current: 4327, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922411
+current: 4427, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922157
+current: 4527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.9223
+current: 4627, total block: 16091
+Cost = 5, Tag Correct(%) = 0.922357
+current: 4727, total block: 16091
+Cost = 7, Tag Correct(%) = 0.922208
+current: 4827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922248
+current: 4927, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922323
+current: 5027, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922152
+current: 5127, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922201
+current: 5227, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922281
+current: 5327, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922554
+current: 5427, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922574
+current: 5527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922497
+current: 5627, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92247
+current: 5727, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922471
+current: 5827, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922477
+current: 5927, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922634
+current: 6027, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922606
+current: 6127, total block: 16091
+Cost = 6, Tag Correct(%) = 0.922706
+current: 6227, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922616
+current: 6327, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922723
+current: 6427, total block: 16091
+Cost = 5, Tag Correct(%) = 0.92268
+current: 6527, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922524
+current: 6627, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922631
+current: 6727, total block: 16091
+Cost = 6, Tag Correct(%) = 0.922504
+current: 6827, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922494
+current: 6927, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922487
+current: 7027, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922411
+current: 7127, total block: 16091
+Cost = 5, Tag Correct(%) = 0.922449
+current: 7227, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922358
+current: 7327, total block: 16091
+Cost = 9, Tag Correct(%) = 0.922298
+current: 7427, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922262
+current: 7527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922113
+current: 7627, total block: 16091
+Cost = 1, Tag Correct(%) = 0.92222
+current: 7727, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922178
+current: 7827, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922158
+current: 7927, total block: 16091
+Cost = 5, Tag Correct(%) = 0.922244
+current: 8027, total block: 16091
+Cost = 1, Tag Correct(%) = 0.922178
+current: 8127, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922075
+current: 8227, total block: 16091
+Cost = 7, Tag Correct(%) = 0.921979
+current: 8327, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922045
+current: 8427, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922036
+current: 8527, total block: 16091
+Cost = 4, Tag Correct(%) = 0.921997
+current: 8627, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922037
+current: 8727, total block: 16091
+Cost = 2, Tag Correct(%) = 0.92201
+current: 8827, total block: 16091
+Cost = 5, Tag Correct(%) = 0.922018
+current: 8927, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922088
+current: 9027, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922061
+current: 9127, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922117
+current: 9227, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922101
+current: 9327, total block: 16091
+Cost = 2, Tag Correct(%) = 0.922096
+current: 9427, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922083
+current: 9527, total block: 16091
+Cost = 3, Tag Correct(%) = 0.92208
+current: 9627, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922053
+current: 9727, total block: 16091
+Cost = 7, Tag Correct(%) = 0.922058
+current: 9827, total block: 16091
+Cost = 4, Tag Correct(%) = 0.922022
+current: 9927, total block: 16091
+Cost = 3, Tag Correct(%) = 0.922011
+current: 10027, total block: 16091
+Cost = 0, Tag Correct(%) = 0.922022
+current: 10127, total block: 16091
+Cost = 6, Tag Correct(%) = 0.921985
+current: 10227, total block: 16091
+Cost = 4, Tag Correct(%) = 0.921857
+current: 10327, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921881
+current: 10427, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921905
+current: 10527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921897
+current: 10627, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921872
+current: 10727, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921869
+current: 10827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921843
+current: 10927, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921934
+current: 11027, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921846
+current: 11127, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921964
+current: 11227, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921917
+current: 11327, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921818
+current: 11427, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921811
+current: 11527, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921788
+current: 11627, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921751
+current: 11727, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921737
+current: 11827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921671
+current: 11927, total block: 16091
+Cost = 6, Tag Correct(%) = 0.921684
+current: 12027, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921669
+current: 12127, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92172
+current: 12227, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921833
+current: 12327, total block: 16091
+Cost = 1, Tag Correct(%) = 0.92185
+current: 12427, total block: 16091
+Cost = 4, Tag Correct(%) = 0.921853
+current: 12527, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921908
+current: 12627, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921922
+current: 12727, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921892
+current: 12827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921917
+current: 12927, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921808
+current: 13027, total block: 16091
+Cost = 6, Tag Correct(%) = 0.921811
+current: 13127, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921801
+current: 13227, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921884
+current: 13327, total block: 16091
+Cost = 5, Tag Correct(%) = 0.921879
+current: 13427, total block: 16091
+Cost = 5, Tag Correct(%) = 0.92191
+current: 13527, total block: 16091
+Cost = 9, Tag Correct(%) = 0.921936
+current: 13627, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921922
+current: 13727, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921816
+current: 13827, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921792
+current: 13927, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921802
+current: 14027, total block: 16091
+Cost = 4, Tag Correct(%) = 0.921858
+current: 14127, total block: 16091
+Cost = 6, Tag Correct(%) = 0.921866
+current: 14227, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921866
+current: 14327, total block: 16091
+Cost = 10, Tag Correct(%) = 0.921856
+current: 14427, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921808
+current: 14527, total block: 16091
+Cost = 4, Tag Correct(%) = 0.921784
+current: 14627, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921863
+current: 14727, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92183
+current: 14827, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921813
+current: 14927, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921878
+current: 15027, total block: 16091
+Cost = 1, Tag Correct(%) = 0.92187
+current: 15127, total block: 16091
+Cost = 0, Tag Correct(%) = 0.92186
+current: 15227, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921866
+current: 15327, total block: 16091
+Cost = 1, Tag Correct(%) = 0.921831
+current: 15427, total block: 16091
+Cost = 3, Tag Correct(%) = 0.921843
+current: 15527, total block: 16091
+Cost = 2, Tag Correct(%) = 0.921811
+current: 15627, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921836
+current: 15727, total block: 16091
+Cost = 7, Tag Correct(%) = 0.921906
+current: 15827, total block: 16091
+Cost = 5, Tag Correct(%) = 0.921889
+current: 15927, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921894
+current: 16027, total block: 16091
+Cost = 0, Tag Correct(%) = 0.921886
+Accuracy:	P=19252/20454=0.941234
+Exceeds best previous performance of 0.940207. Saving model file..
+##### Iteration 4
+current: 36, total block: 16091
+Cost = 1, Tag Correct(%) = 0.938939
+current: 136, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934164
+current: 236, total block: 16091
+Cost = 3, Tag Correct(%) = 0.939528
+current: 336, total block: 16091
+Cost = 1, Tag Correct(%) = 0.938882
+current: 436, total block: 16091
+Cost = 4, Tag Correct(%) = 0.937757
+current: 536, total block: 16091
+Cost = 0, Tag Correct(%) = 0.937309
+current: 636, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935244
+current: 736, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934675
+current: 836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.933143
+current: 936, total block: 16091
+Cost = 1, Tag Correct(%) = 0.933748
+current: 1036, total block: 16091
+Cost = 1, Tag Correct(%) = 0.93317
+current: 1136, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934053
+current: 1236, total block: 16091
+Cost = 2, Tag Correct(%) = 0.93591
+current: 1336, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935541
+current: 1436, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935144
+current: 1536, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934973
+current: 1636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935269
+current: 1736, total block: 16091
+Cost = 2, Tag Correct(%) = 0.934969
+current: 1836, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935536
+current: 1936, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935364
+current: 2036, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935259
+current: 2136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935693
+current: 2236, total block: 16091
+Cost = 9, Tag Correct(%) = 0.936098
+current: 2336, total block: 16091
+Cost = 0, Tag Correct(%) = 0.936094
+current: 2436, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935831
+current: 2536, total block: 16091
+Cost = 5, Tag Correct(%) = 0.935696
+current: 2636, total block: 16091
+Cost = 4, Tag Correct(%) = 0.936097
+current: 2736, total block: 16091
+Cost = 2, Tag Correct(%) = 0.936191
+current: 2836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.936154
+current: 2936, total block: 16091
+Cost = 3, Tag Correct(%) = 0.935723
+current: 3036, total block: 16091
+Cost = 5, Tag Correct(%) = 0.935613
+current: 3136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935552
+current: 3236, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935229
+current: 3336, total block: 16091
+Cost = 3, Tag Correct(%) = 0.935312
+current: 3436, total block: 16091
+Cost = 4, Tag Correct(%) = 0.935572
+current: 3536, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935781
+current: 3636, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935781
+current: 3736, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935679
+current: 3836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935758
+current: 3936, total block: 16091
+Cost = 4, Tag Correct(%) = 0.935605
+current: 4036, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935613
+current: 4136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935598
+current: 4236, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935735
+current: 4336, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935928
+current: 4436, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935576
+current: 4536, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935358
+current: 4636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935384
+current: 4736, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935562
+current: 4836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.93536
+current: 4936, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935213
+current: 5036, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935329
+current: 5136, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935452
+current: 5236, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935464
+current: 5336, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935471
+current: 5436, total block: 16091
+Cost = 3, Tag Correct(%) = 0.935417
+current: 5536, total block: 16091
+Cost = 5, Tag Correct(%) = 0.935372
+current: 5636, total block: 16091
+Cost = 4, Tag Correct(%) = 0.935233
+current: 5736, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935293
+current: 5836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935331
+current: 5936, total block: 16091
+Cost = 3, Tag Correct(%) = 0.93523
+current: 6036, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935265
+current: 6136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935155
+current: 6236, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935159
+current: 6336, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935216
+current: 6436, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935153
+current: 6536, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935171
+current: 6636, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935222
+current: 6736, total block: 16091
+Cost = 4, Tag Correct(%) = 0.935216
+current: 6836, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935271
+current: 6936, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935122
+current: 7036, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934988
+current: 7136, total block: 16091
+Cost = 5, Tag Correct(%) = 0.934975
+current: 7236, total block: 16091
+Cost = 1, Tag Correct(%) = 0.93505
+current: 7336, total block: 16091
+Cost = 5, Tag Correct(%) = 0.935132
+current: 7436, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935226
+current: 7536, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935194
+current: 7636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935201
+current: 7736, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935272
+current: 7836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935249
+current: 7936, total block: 16091
+Cost = 1, Tag Correct(%) = 0.93532
+current: 8036, total block: 16091
+Cost = 3, Tag Correct(%) = 0.935368
+current: 8136, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935476
+current: 8236, total block: 16091
+Cost = 11, Tag Correct(%) = 0.935365
+current: 8336, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935308
+current: 8436, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935235
+current: 8536, total block: 16091
+Cost = 3, Tag Correct(%) = 0.935157
+current: 8636, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935188
+current: 8736, total block: 16091
+Cost = 4, Tag Correct(%) = 0.93515
+current: 8836, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935188
+current: 8936, total block: 16091
+Cost = 4, Tag Correct(%) = 0.935272
+current: 9036, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935344
+current: 9136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935393
+current: 9236, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935381
+current: 9336, total block: 16091
+Cost = 5, Tag Correct(%) = 0.935417
+current: 9436, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935437
+current: 9536, total block: 16091
+Cost = 7, Tag Correct(%) = 0.935257
+current: 9636, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935352
+current: 9736, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935399
+current: 9836, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935248
+current: 9936, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935178
+current: 10036, total block: 16091
+Cost = 1, Tag Correct(%) = 0.935099
+current: 10136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935057
+current: 10236, total block: 16091
+Cost = 4, Tag Correct(%) = 0.935016
+current: 10336, total block: 16091
+Cost = 0, Tag Correct(%) = 0.935033
+current: 10436, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935116
+current: 10536, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935098
+current: 10636, total block: 16091
+Cost = 2, Tag Correct(%) = 0.935065
+current: 10736, total block: 16091
+Cost = 3, Tag Correct(%) = 0.935067
+current: 10836, total block: 16091
+Cost = 9, Tag Correct(%) = 0.935061
+current: 10936, total block: 16091
+Cost = 4, Tag Correct(%) = 0.934966
+current: 11036, total block: 16091
+Cost = 4, Tag Correct(%) = 0.934922
+current: 11136, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934881
+current: 11236, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934877
+current: 11336, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934881
+current: 11436, total block: 16091
+Cost = 5, Tag Correct(%) = 0.934843
+current: 11536, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934842
+current: 11636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934834
+current: 11736, total block: 16091
+Cost = 1, Tag Correct(%) = 0.93487
+current: 11836, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934847
+current: 11936, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934799
+current: 12036, total block: 16091
+Cost = 9, Tag Correct(%) = 0.934666
+current: 12136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934587
+current: 12236, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934644
+current: 12336, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934677
+current: 12436, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934694
+current: 12536, total block: 16091
+Cost = 4, Tag Correct(%) = 0.934706
+current: 12636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934745
+current: 12736, total block: 16091
+Cost = 5, Tag Correct(%) = 0.934817
+current: 12836, total block: 16091
+Cost = 4, Tag Correct(%) = 0.934815
+current: 12936, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934735
+current: 13036, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934695
+current: 13136, total block: 16091
+Cost = 2, Tag Correct(%) = 0.93469
+current: 13236, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934734
+current: 13336, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934716
+current: 13436, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934696
+current: 13536, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934589
+current: 13636, total block: 16091
+Cost = 2, Tag Correct(%) = 0.934633
+current: 13736, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934675
+current: 13836, total block: 16091
+Cost = 2, Tag Correct(%) = 0.934652
+current: 13936, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934633
+current: 14036, total block: 16091
+Cost = 0, Tag Correct(%) = 0.93467
+current: 14136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934687
+current: 14236, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934674
+current: 14336, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934651
+current: 14436, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934591
+current: 14536, total block: 16091
+Cost = 2, Tag Correct(%) = 0.934561
+current: 14636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934492
+current: 14736, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934513
+current: 14836, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934472
+current: 14936, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934442
+current: 15036, total block: 16091
+Cost = 7, Tag Correct(%) = 0.934484
+current: 15136, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934493
+current: 15236, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934516
+current: 15336, total block: 16091
+Cost = 6, Tag Correct(%) = 0.93454
+current: 15436, total block: 16091
+Cost = 2, Tag Correct(%) = 0.934601
+current: 15536, total block: 16091
+Cost = 1, Tag Correct(%) = 0.934617
+current: 15636, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934584
+current: 15736, total block: 16091
+Cost = 0, Tag Correct(%) = 0.934588
+current: 15836, total block: 16091
+Cost = 3, Tag Correct(%) = 0.934601
+current: 15936, total block: 16091
+Cost = 4, Tag Correct(%) = 0.934655
+current: 16036, total block: 16091
+Cost = 1, Tag Correct(%) = 0.93463
+Accuracy:	P=19223/20454=0.939816
+##### Iteration 5
+current: 45, total block: 16091
+Cost = 0, Tag Correct(%) = 0.939759
+current: 145, total block: 16091
+Cost = 2, Tag Correct(%) = 0.948318
+current: 245, total block: 16091
+Cost = 3, Tag Correct(%) = 0.947755
+current: 345, total block: 16091
+Cost = 1, Tag Correct(%) = 0.945282
+current: 445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.944852
+current: 545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.94483
+current: 645, total block: 16091
+Cost = 1, Tag Correct(%) = 0.945121
+current: 745, total block: 16091
+Cost = 1, Tag Correct(%) = 0.944531
+current: 845, total block: 16091
+Cost = 0, Tag Correct(%) = 0.944561
+current: 945, total block: 16091
+Cost = 0, Tag Correct(%) = 0.945688
+current: 1045, total block: 16091
+Cost = 4, Tag Correct(%) = 0.944648
+current: 1145, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943639
+current: 1245, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943936
+current: 1345, total block: 16091
+Cost = 2, Tag Correct(%) = 0.94358
+current: 1445, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943707
+current: 1545, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943105
+current: 1645, total block: 16091
+Cost = 3, Tag Correct(%) = 0.942978
+current: 1745, total block: 16091
+Cost = 7, Tag Correct(%) = 0.94316
+current: 1845, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943027
+current: 1945, total block: 16091
+Cost = 7, Tag Correct(%) = 0.943124
+current: 2045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943131
+current: 2145, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943071
+current: 2245, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943118
+current: 2345, total block: 16091
+Cost = 0, Tag Correct(%) = 0.94331
+current: 2445, total block: 16091
+Cost = 6, Tag Correct(%) = 0.943574
+current: 2545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943549
+current: 2645, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943654
+current: 2745, total block: 16091
+Cost = 3, Tag Correct(%) = 0.94364
+current: 2845, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943912
+current: 2945, total block: 16091
+Cost = 0, Tag Correct(%) = 0.944141
+current: 3045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.944054
+current: 3145, total block: 16091
+Cost = 2, Tag Correct(%) = 0.94413
+current: 3245, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943954
+current: 3345, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943944
+current: 3445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943867
+current: 3545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943684
+current: 3645, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943524
+current: 3745, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943495
+current: 3845, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943647
+current: 3945, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943665
+current: 4045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943677
+current: 4145, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943588
+current: 4245, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943622
+current: 4345, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943473
+current: 4445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943507
+current: 4545, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943403
+current: 4645, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943513
+current: 4745, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943494
+current: 4845, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943562
+current: 4945, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943804
+current: 5045, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943552
+current: 5145, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943641
+current: 5245, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943626
+current: 5345, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943629
+current: 5445, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943547
+current: 5545, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943588
+current: 5645, total block: 16091
+Cost = 0, Tag Correct(%) = 0.94366
+current: 5745, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943707
+current: 5845, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943768
+current: 5945, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943855
+current: 6045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943845
+current: 6145, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943738
+current: 6245, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943789
+current: 6345, total block: 16091
+Cost = 2, Tag Correct(%) = 0.94377
+current: 6445, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943706
+current: 6545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943795
+current: 6645, total block: 16091
+Cost = 2, Tag Correct(%) = 0.9439
+current: 6745, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943812
+current: 6845, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943819
+current: 6945, total block: 16091
+Cost = 1, Tag Correct(%) = 0.94361
+current: 7045, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943455
+current: 7145, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943465
+current: 7245, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943586
+current: 7345, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943704
+current: 7445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943713
+current: 7545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943748
+current: 7645, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943732
+current: 7745, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943674
+current: 7845, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943575
+current: 7945, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943567
+current: 8045, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943579
+current: 8145, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943642
+current: 8245, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943659
+current: 8345, total block: 16091
+Cost = 1, Tag Correct(%) = 0.94371
+current: 8445, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943688
+current: 8545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943573
+current: 8645, total block: 16091
+Cost = 3, Tag Correct(%) = 0.94364
+current: 8745, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943626
+current: 8845, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943624
+current: 8945, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943469
+current: 9045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943404
+current: 9145, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943257
+current: 9245, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943228
+current: 9345, total block: 16091
+Cost = 6, Tag Correct(%) = 0.943181
+current: 9445, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943288
+current: 9545, total block: 16091
+Cost = 4, Tag Correct(%) = 0.94326
+current: 9645, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943241
+current: 9745, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943255
+current: 9845, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943285
+current: 9945, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943314
+current: 10045, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943285
+current: 10145, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943264
+current: 10245, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943259
+current: 10345, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943247
+current: 10445, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943365
+current: 10545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943397
+current: 10645, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943349
+current: 10745, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943392
+current: 10845, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943422
+current: 10945, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943311
+current: 11045, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943275
+current: 11145, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943271
+current: 11245, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943257
+current: 11345, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943176
+current: 11445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943226
+current: 11545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943244
+current: 11645, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943276
+current: 11745, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943332
+current: 11845, total block: 16091
+Cost = 6, Tag Correct(%) = 0.943333
+current: 11945, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943373
+current: 12045, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943461
+current: 12145, total block: 16091
+Cost = 3, Tag Correct(%) = 0.94346
+current: 12245, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943436
+current: 12345, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943497
+current: 12445, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943522
+current: 12545, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943523
+current: 12645, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943482
+current: 12745, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943418
+current: 12845, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943386
+current: 12945, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943332
+current: 13045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943421
+current: 13145, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943429
+current: 13245, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943408
+current: 13345, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943423
+current: 13445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943433
+current: 13545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943445
+current: 13645, total block: 16091
+Cost = 6, Tag Correct(%) = 0.943432
+current: 13745, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943455
+current: 13845, total block: 16091
+Cost = 11, Tag Correct(%) = 0.943467
+current: 13945, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943476
+current: 14045, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943465
+current: 14145, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943459
+current: 14245, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943499
+current: 14345, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943524
+current: 14445, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943589
+current: 14545, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943588
+current: 14645, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943624
+current: 14745, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943602
+current: 14845, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943602
+current: 14945, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943643
+current: 15045, total block: 16091
+Cost = 3, Tag Correct(%) = 0.943647
+current: 15145, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943659
+current: 15245, total block: 16091
+Cost = 4, Tag Correct(%) = 0.943636
+current: 15345, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943636
+current: 15445, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943586
+current: 15545, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943607
+current: 15645, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943638
+current: 15745, total block: 16091
+Cost = 2, Tag Correct(%) = 0.943659
+current: 15845, total block: 16091
+Cost = 5, Tag Correct(%) = 0.943629
+current: 15945, total block: 16091
+Cost = 1, Tag Correct(%) = 0.943653
+current: 16045, total block: 16091
+Cost = 0, Tag Correct(%) = 0.943661
+Accuracy:	P=19242/20454=0.940745
+##### Iteration 6
+current: 54, total block: 16091
+Cost = 0, Tag Correct(%) = 0.956734
+current: 154, total block: 16091
+Cost = 0, Tag Correct(%) = 0.954253
+current: 254, total block: 16091
+Cost = 6, Tag Correct(%) = 0.95206
+current: 354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95135
+current: 454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.94998
+current: 554, total block: 16091
+Cost = 1, Tag Correct(%) = 0.949352
+current: 654, total block: 16091
+Cost = 2, Tag Correct(%) = 0.949843
+current: 754, total block: 16091
+Cost = 6, Tag Correct(%) = 0.949457
+current: 854, total block: 16091
+Cost = 2, Tag Correct(%) = 0.950496
+current: 954, total block: 16091
+Cost = 3, Tag Correct(%) = 0.95085
+current: 1054, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951553
+current: 1154, total block: 16091
+Cost = 4, Tag Correct(%) = 0.951447
+current: 1254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95199
+current: 1354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952039
+current: 1454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.9521
+current: 1554, total block: 16091
+Cost = 1, Tag Correct(%) = 0.951944
+current: 1654, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951725
+current: 1754, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952176
+current: 1854, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952133
+current: 1954, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952159
+current: 2054, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952518
+current: 2154, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952572
+current: 2254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952696
+current: 2354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.9529
+current: 2454, total block: 16091
+Cost = 1, Tag Correct(%) = 0.95282
+current: 2554, total block: 16091
+Cost = 5, Tag Correct(%) = 0.952479
+current: 2654, total block: 16091
+Cost = 2, Tag Correct(%) = 0.95236
+current: 2754, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952237
+current: 2854, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952443
+current: 2954, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952375
+current: 3054, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952606
+current: 3154, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952521
+current: 3254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952478
+current: 3354, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952773
+current: 3454, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952894
+current: 3554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.953016
+current: 3654, total block: 16091
+Cost = 1, Tag Correct(%) = 0.953065
+current: 3754, total block: 16091
+Cost = 1, Tag Correct(%) = 0.953163
+current: 3854, total block: 16091
+Cost = 0, Tag Correct(%) = 0.953198
+current: 3954, total block: 16091
+Cost = 0, Tag Correct(%) = 0.953172
+current: 4054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.953056
+current: 4154, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952988
+current: 4254, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952892
+current: 4354, total block: 16091
+Cost = 2, Tag Correct(%) = 0.95291
+current: 4454, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952681
+current: 4554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952651
+current: 4654, total block: 16091
+Cost = 4, Tag Correct(%) = 0.952628
+current: 4754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952604
+current: 4854, total block: 16091
+Cost = 1, Tag Correct(%) = 0.95277
+current: 4954, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952738
+current: 5054, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952709
+current: 5154, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952718
+current: 5254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952826
+current: 5354, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952854
+current: 5454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952757
+current: 5554, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952784
+current: 5654, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952853
+current: 5754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95282
+current: 5854, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952752
+current: 5954, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952655
+current: 6054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95269
+current: 6154, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952593
+current: 6254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952674
+current: 6354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952613
+current: 6454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952693
+current: 6554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952541
+current: 6654, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952507
+current: 6754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952448
+current: 6854, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952368
+current: 6954, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952461
+current: 7054, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952476
+current: 7154, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952464
+current: 7254, total block: 16091
+Cost = 1, Tag Correct(%) = 0.95247
+current: 7354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952464
+current: 7454, total block: 16091
+Cost = 6, Tag Correct(%) = 0.952508
+current: 7554, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952453
+current: 7654, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952451
+current: 7754, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952433
+current: 7854, total block: 16091
+Cost = 5, Tag Correct(%) = 0.952404
+current: 7954, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952428
+current: 8054, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952382
+current: 8154, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952387
+current: 8254, total block: 16091
+Cost = 4, Tag Correct(%) = 0.952412
+current: 8354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95246
+current: 8454, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952474
+current: 8554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952443
+current: 8654, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95247
+current: 8754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952421
+current: 8854, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952456
+current: 8954, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952341
+current: 9054, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952372
+current: 9154, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952433
+current: 9254, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952327
+current: 9354, total block: 16091
+Cost = 5, Tag Correct(%) = 0.952272
+current: 9454, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952205
+current: 9554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952238
+current: 9654, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952168
+current: 9754, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952131
+current: 9854, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952142
+current: 9954, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952118
+current: 10054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952087
+current: 10154, total block: 16091
+Cost = 5, Tag Correct(%) = 0.952021
+current: 10254, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952055
+current: 10354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952112
+current: 10454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952091
+current: 10554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952105
+current: 10654, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952136
+current: 10754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952132
+current: 10854, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952069
+current: 10954, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952107
+current: 11054, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952097
+current: 11154, total block: 16091
+Cost = 4, Tag Correct(%) = 0.952016
+current: 11254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952074
+current: 11354, total block: 16091
+Cost = 5, Tag Correct(%) = 0.952018
+current: 11454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951997
+current: 11554, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952078
+current: 11654, total block: 16091
+Cost = 3, Tag Correct(%) = 0.95211
+current: 11754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952075
+current: 11854, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95203
+current: 11954, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952013
+current: 12054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952012
+current: 12154, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952106
+current: 12254, total block: 16091
+Cost = 4, Tag Correct(%) = 0.952154
+current: 12354, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952129
+current: 12454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.95208
+current: 12554, total block: 16091
+Cost = 2, Tag Correct(%) = 0.952062
+current: 12654, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952021
+current: 12754, total block: 16091
+Cost = 4, Tag Correct(%) = 0.951942
+current: 12854, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951969
+current: 12954, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951992
+current: 13054, total block: 16091
+Cost = 1, Tag Correct(%) = 0.951979
+current: 13154, total block: 16091
+Cost = 4, Tag Correct(%) = 0.95195
+current: 13254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951937
+current: 13354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951927
+current: 13454, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951931
+current: 13554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951959
+current: 13654, total block: 16091
+Cost = 1, Tag Correct(%) = 0.951978
+current: 13754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951995
+current: 13854, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952024
+current: 13954, total block: 16091
+Cost = 4, Tag Correct(%) = 0.952021
+current: 14054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.95204
+current: 14154, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952055
+current: 14254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952013
+current: 14354, total block: 16091
+Cost = 1, Tag Correct(%) = 0.952002
+current: 14454, total block: 16091
+Cost = 3, Tag Correct(%) = 0.952014
+current: 14554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951991
+current: 14654, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951988
+current: 14754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952005
+current: 14854, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952018
+current: 14954, total block: 16091
+Cost = 5, Tag Correct(%) = 0.952058
+current: 15054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952032
+current: 15154, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952008
+current: 15254, total block: 16091
+Cost = 0, Tag Correct(%) = 0.952036
+current: 15354, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951989
+current: 15454, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951965
+current: 15554, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951943
+current: 15654, total block: 16091
+Cost = 1, Tag Correct(%) = 0.951922
+current: 15754, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951915
+current: 15854, total block: 16091
+Cost = 2, Tag Correct(%) = 0.951914
+current: 15954, total block: 16091
+Cost = 1, Tag Correct(%) = 0.951828
+current: 16054, total block: 16091
+Cost = 0, Tag Correct(%) = 0.951792
+Accuracy:	P=19236/20454=0.940452
+##### Iteration 7
+current: 63, total block: 16091
+Cost = 1, Tag Correct(%) = 0.954925
+current: 163, total block: 16091
+Cost = 0, Tag Correct(%) = 0.957195
+current: 263, total block: 16091
+Cost = 0, Tag Correct(%) = 0.958143
+current: 363, total block: 16091
+Cost = 1, Tag Correct(%) = 0.960376
+current: 463, total block: 16091
+Cost = 0, Tag Correct(%) = 0.958638
+current: 563, total block: 16091
+Cost = 1, Tag Correct(%) = 0.958291
+current: 663, total block: 16091
+Cost = 5, Tag Correct(%) = 0.958956
+current: 763, total block: 16091
+Cost = 2, Tag Correct(%) = 0.959387
+current: 863, total block: 16091
+Cost = 1, Tag Correct(%) = 0.959752
+current: 963, total block: 16091
+Cost = 0, Tag Correct(%) = 0.959137
+current: 1063, total block: 16091
+Cost = 0, Tag Correct(%) = 0.958816
+current: 1163, total block: 16091
+Cost = 1, Tag Correct(%) = 0.958833
+current: 1263, total block: 16091
+Cost = 2, Tag Correct(%) = 0.958897
+current: 1363, total block: 16091
+Cost = 3, Tag Correct(%) = 0.959029
