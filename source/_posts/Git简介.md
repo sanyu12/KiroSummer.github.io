@@ -63,4 +63,5 @@ __git init__可以将当前目录变成Git管理的版本库repository
 ```
 global linear model的相关库创建完毕！
 
-
+## 利用 hexo实现的多台电脑博客
+![链接](http://chown-jane-y.coding.me/2017/03/15/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%8D%E5%90%8C%E7%94%B5%E8%84%91%E4%B8%8A%E5%90%8C%E6%97%B6%E5%86%99hexo%E5%8D%9A%E5%AE%A2%EF%BC%9F/)
