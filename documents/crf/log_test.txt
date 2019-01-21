@@ -1,0 +1,68 @@
+nohup: ignoring input
+2
+l2sgd-batch-size = 30
+test-partial-annotation-one-by-one = 0
+parameter-path = .
+thread-num = 20
+get-cpostag-from-pdeprel = 0
+english = 0
+inst-max-num-eval = -500
+l2sgd-c2 = 0.1
+use-addtional-pos = 1
+inst-max-len-to-throw = 100
+fcutoff = 0
+display-interval = 1000
+constrained-tag-test = 0
+param-num-for-eval = 18
+param-tmp-num = 1
+inst-max-num-train = -1000
+test-batch-size = 100000
+test-partial-annotation = 0
+train-method = l2sgd
+test = 1
+copy-cpostag-from-postag = 0
+iter-num = 30
+parameter-exist = 1
+addtitional-pos = URL_ON_X
+dictionary-path = .
+dev-file = ../../data/ctb7/dev.conll
+test-file = ../../data/ctb7/test.conll
+output-file = test.out.conll07
+train = 0
+test-partial-annotation-ratio = 0.5
+dictionary-exist = 1
+train-file = ../../data/ctb7/train.conll
+*** l2sgd train options: 30-0.1-10-1e-06-0.1-2-1000-10-20
+
+
+ eval: 18	[Tue May 17 22:38:32 2016]
+FGen : loading feature dictionaries from "."	[Tue May 17 22:38:32 2016]
+FeatureDictionary : loading from "./word.dict.gz" 
+FeatureDictionary :  55324 features
+FeatureDictionary : loading from "./pos.dict.gz" 
+FeatureDictionary :  36 features
+FeatureDictionary : loading from "./pos.features.gz" 
+FeatureDictionary : ..... 1411761 features
+word    number: 55324
+postag  number: 36
+pos     feature dimensionality: 1411761
+total   feature dimensionality: 50823396
+pos     feature start   offset: 0
+
+ done!	[Tue May 17 22:38:34 2016]
+Parameters : reading from "./parameters.018.gz" .............................................. [nnz=48797694/50823396]
+Get all instances from ../../data/ctb7/test.conll	[Tue May 17 22:39:08 2016]
+ [0:101]  [1:117]  [2:104]  [3:105]  [4:102]  [5:118]  [6:108]  [7:117]  [8:104]  [9:102]  [10:121]  [11:190]  [12:102]  [13:103]  [14:105]  [15:159] 
+instance num: 2780
+Done!	[Tue May 17 22:39:08 2016]
+0 	[Tue May 17 22:39:08 2016]
+1000 2000 
+instance num: 2780	[Tue May 17 22:39:13 2016]
+Get all instances from ../../data/ctb7/test.conll	[Tue May 17 22:39:13 2016]
+
+instance num: 0
+Done!	[Tue May 17 22:39:13 2016]
+done	[Tue May 17 22:39:13 2016]
+POS Precision:  		75115/79736 = 94.20463
+POS Prec(OOV):  		3121/3839 = 81.29721
+waiting for 20 thread(s) to exit

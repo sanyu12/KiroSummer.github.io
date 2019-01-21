@@ -1,0 +1,23 @@
+nohup: ignoring input
+Doing random shuffle 10000 times.
+Completed 1000 iterations
+Completed 2000 iterations
+Completed 3000 iterations
+Completed 4000 iterations
+Completed 5000 iterations
+Completed 6000 iterations
+Completed 7000 iterations
+Completed 8000 iterations
+Completed 9000 iterations
+18832
+model1: recall=82.2589252336437, precision=80.9634367034825
+model2: recall=82.9730134876794, precision=82.1740834749354
+model2 recall - model1 recall = 0.714088254035687
+model2 precision - model1 precision = 1.21064677145294
+number of random recall diferences equal to or greater than
+	original observed difference: 48
+number of random precision diferences equal to or greater than
+	original observed difference: 0
+p-value for recall diff: 0.0048995100489951
+p-value for precision diff: 9.99900009999e-05
+
