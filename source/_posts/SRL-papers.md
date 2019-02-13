@@ -55,3 +55,6 @@ tags: [SRL]
 ## Syntactic Scaffolds for Semantic Structures
 本篇论文提出了一个利用 multi-task learning的方法利用短语结构句法树进行语义任务的处理，称之为句法“梯子”。
 模型主要通过将句法端的 span作为模型句法部分的训练目标；同时，在进行语义预测的时候，利用强化的 span表示进行 argument的预测：1）BiLSTM产生的上下文相关的表示；2）attention机制产生的 span summary；3）span的特征。
+
+## An Empirical Study of Building a Strong Baseline for Constituency Parsing
+在这边插播一个短语结构树句法的工作，本篇文章是 EMNLP2018年的一篇short。本文利用最近在 NLG领域一些比较新颖的技术来提升基于 sequence-to-sequence的 constitutency parsering。并且取得了比较好的结果。利用了一些技术，比如 subword（BPE），unknown token embedding as a bias, multi-task learning, output length controlling, pre-trained word embedding, model ensemble and LM reranking. 本文的实验结果还是比较详细的，能够从实验结果中看出每一个 technic带来的效益是多少。
